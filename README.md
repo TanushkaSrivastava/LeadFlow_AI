@@ -121,29 +121,29 @@ LeadFlow/
 ## 🚀 Getting Started  
 
 ### 1️⃣ Clone the Repository  
-git clone https://github.com/your-username/LeadFlow-AI.git
-cd LeadFlow-AI/backend
+- git clone https://github.com/your-username/LeadFlow-AI.git
+- cd LeadFlow-AI/backend
 
 
 ---
 
 ### 2️⃣ Install Dependencies  
-pip install -r requirements.txt
+-pip install -r requirements.txt
 
 
 ---
 
 ### 3️⃣ Setup Environment Variables  
 
-Create `.env` file:
-GEMINI_API_KEY=your_api_key_here
-EMAIL=your_email
-PASSWORD=your_app_password
+-Create `.env` file:
+-GEMINI_API_KEY=your_api_key_here
+-EMAIL=your_email
+-PASSWORD=your_app_password
 
 ---
 
 ### 4️⃣ Run the Application  
-python app.py
+-python app.py
 
 ---
 
