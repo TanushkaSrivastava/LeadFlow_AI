@@ -1,0 +1,21 @@
+# =============================================================================
+# LeadFlow AI — Python Dependencies
+# =============================================================================
+
+# --- Web Framework ---
+Flask==3.1.1
+flask-cors==5.0.1
+flask-limiter==3.12
+
+# --- AI ---
+google-genai==1.14.0
+
+# --- PDF Generation ---
+reportlab==4.4.0
+
+# --- Web Scraping ---
+beautifulsoup4==4.13.4
+requests==2.32.3
+
+# --- Environment Variables ---
+python-dotenv==1.1.0

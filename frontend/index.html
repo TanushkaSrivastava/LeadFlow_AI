@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeadFlow AI — Personalized Business Audit Reports</title>
+    <meta name="description" content="Get your AI-powered business audit report in seconds. LeadFlow AI analyzes your company and delivers personalized insights directly to your inbox." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="3" stroke="currentColor" stroke-width="2"/><line x1="8" y1="11" x2="12" y2="13" stroke="currentColor" stroke-width="2"/><line x1="16" y1="11" x2="12" y2="13" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <span class="nav-title">LeadFlow AI</span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" style="display:none"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+    </nav>
+
+    <!-- ============================================================
+         PAGE: LANDING
+    ============================================================ -->
+    <div id="page-landing" class="page active">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">LeadFlow AI</div>
+            <h1 class="hero-title">Get Your Personalized Business Audit in Seconds</h1>
+            <p class="hero-subtitle">Harness the power of AI to analyze your company, uncover opportunities, and receive a comprehensive roadmap for your business.</p>
+            <div class="hero-actions">
+                <button class="btn-primary" id="heroCtaBtn" onclick="showPage('page-form')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    Generate My Report ✦
+                </button>
+                <button class="btn-outline" onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})">Watch Demo</button>
+            </div>
+
+            <!-- Hero Image Card -->
+            <div class="hero-card">
+                <div class="hero-card-inner">
+                    <div class="hero-card-badge">LeadFlow AI</div>
+                    <h3>Designed for Growth</h3>
+                    <p>Precision insights designed to give you a competitive edge within the technical complexity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Pills -->
+        <section class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <div>
+                    <h4>AI Analytics</h4>
+                    <p>Deep real-time industry analysis with detailed notifications.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📄</div>
+                <div>
+                    <h4>Instant PDF Reports</h4>
+                    <p>Professionally formatted, white-labeled reports ready for stakeholder sharing within milliseconds.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💡</div>
+                <div>
+                    <h4>Smart Insights</h4>
+                    <p>AI-based insights that are personalized to your sector.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📧</div>
+                <div>
+                    <h4>Automated Delivery</h4>
+                    <p>Reports delivered directly to your inbox without a single delay.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-section" id="how-it-works">
+            <h2>How It Works</h2>
+            <p class="how-subtitle">Three simple steps to scale your story.</p>
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-icon">🔗</div>
+                    <div>
+                        <h4>Connect Data</h4>
+                        <p>Seamlessly share your existing business tools and data sources.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">⚡</div>
+                    <div>
+                        <h4>AI Processing</h4>
+                        <p>Our humanist engine identifies patterns and opportunities.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📈</div>
+                    <div>
+                        <h4>Get Results</h4>
+                        <p>Receive your comprehensive audit and strategic roadmap.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <h2>Ready to scale smarter?</h2>
+            <p>Join 1,200+ companies leveraging AI for intelligent growth.</p>
+            <button class="btn-primary" onclick="showPage('page-form')">
+                Generate My Report Now
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-brand">LEADFLOW AI</div>
+            <p>© 2024 LeadFlow AI. Business Intelligence for Modern Business.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============================================================
+         PAGE: FORM
+    ============================================================ -->
+    <div id="page-form" class="page">
+        <div class="form-wrapper">
+            <div class="form-progress-bar">
+                <span>Step 1 of 3: Business Details</span>
+                <span>33% Complete</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width:33%"></div></div>
+
+            <div class="form-card">
+                <div class="form-card-header">
+                    <h2>Humanist Intelligence</h2>
+                    <p>Provide your details to begin the AI-driven market analysis.</p>
+                </div>
+
+                <form id="leadForm" novalidate>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <input type="text" id="inputName" placeholder="Full Name" autocomplete="name" required />
+                        <span class="field-error" id="errName"></span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="m2 7 10 7 10-7" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <input type="email" id="inputEmail" placeholder="Work Email Address" autocomplete="email" required />
+                        <span class="field-error" id="errEmail"></span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <input type="text" id="inputCompany" placeholder="Company Name" required />
+                        <span class="field-error" id="errCompany"></span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <input type="url" id="inputWebsite" placeholder="Website URL (https://...)" required />
+                        <span class="field-error" id="errWebsite"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-full" id="submitBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                        Generate Report ✦
+                    </button>
+                    <p class="form-footnote">Our AI models will analyze your data instantly.</p>
+                </form>
+            </div>
+
+            <div class="form-trust">
+                <span>🔒 Secure Processing</span>
+                <span>🛡️ Privacy Compliant</span>
+            </div>
+        </div>
+
+        <footer class="footer footer-mini">
+            <div class="footer-brand">LEADFLOW AI</div>
+            <p>© 2024 LeadFlow AI. Humanist Intelligence for Modern Business.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============================================================
+         PAGE: PROCESSING
+    ============================================================ -->
+    <div id="page-processing" class="page">
+        <div class="processing-wrapper">
+            <div class="processing-icon-ring">
+                <div class="ring-spinner"></div>
+                <div class="ring-inner">✦</div>
+            </div>
+            <h2>Intelligence in Motion</h2>
+            <p>Preparing your insights with humanist precision.</p>
+
+            <div class="steps-card">
+                <div class="proc-step" id="proc-step-1">
+                    <div class="proc-dot"></div>
+                    <span>Validating your data...</span>
+                </div>
+                <div class="proc-step" id="proc-step-2">
+                    <div class="proc-dot"></div>
+                    <span>Analyzing company website...</span>
+                </div>
+                <div class="proc-step" id="proc-step-3">
+                    <div class="proc-dot"></div>
+                    <span>Generating AI report...</span>
+                </div>
+                <div class="proc-step" id="proc-step-4">
+                    <div class="proc-dot"></div>
+                    <span>Sending email...</span>
+                </div>
+            </div>
+
+            <div class="estimated-time">
+                ESTIMATED TIME REMAINING: <span id="timerCountdown">40 SECONDS</span>
+            </div>
+
+            <div class="insight-quote">
+                <span>💡</span>
+                <em id="rotatingQuote">"Our AI is currently scanning 2,400+ industry data points to ensure your report is both accurate and tailored to market trends."</em>
+            </div>
+        </div>
+
+        <footer class="footer footer-mini">
+            <div class="footer-brand">LEADFLOW AI</div>
+            <p>© 2024 LeadFlow AI. Humanist Intelligence for Modern Business.</p>
+        </footer>
+    </div>
+
+    <!-- ============================================================
+         PAGE: SUCCESS
+    ============================================================ -->
+    <div id="page-success" class="page">
+        <div class="result-wrapper">
+            <div class="result-icon result-icon--success">✓</div>
+            <h2>Your report has been sent successfully!</h2>
+            <p>Our AI has finalized the analysis and delivered the comprehensive insights directly to your inbox.</p>
+            <div class="result-actions">
+                <button class="btn-outline btn-full" onclick="showPage('page-form')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2"/><line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2"/></svg>
+                    Generate Another
+                </button>
+                <button class="btn-primary btn-full" onclick="showPage('page-landing')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2"/></svg>
+                    Go Home
+                </button>
+            </div>
+        </div>
+
+        <!-- AI Report Preview (populated by script.js) -->
+        <div id="reportPreview" style="display:none; max-width:560px; margin:0 auto; padding:0 20px 32px;"></div>
+
+        <div class="post-actions">
+            <div class="post-action-item">
+                <div class="post-action-icon">📈</div>
+                <div>
+                    <h4>View Analytics</h4>
+                    <p>Track the performance of your latest reports in real-time.</p>
+                </div>
+            </div>
+            <div class="post-action-item">
+                <div class="post-action-icon">🔗</div>
+                <div>
+                    <h4>Share Report</h4>
+                    <p>Export or send this intelligence to your leadership team.</p>
+                </div>
+            </div>
+            <div class="post-action-item">
+                <div class="post-action-icon">✦</div>
+                <div>
+                    <h4>AI Settings</h4>
+                    <p>Customize the parameters for your next automated generation.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer footer-mini">
+            <div class="footer-brand">LEADFLOW AI</div>
+            <p>© 2024 LeadFlow AI. Humanist Intelligence for Modern Business.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============================================================
+         PAGE: ERROR
+    ============================================================ -->
+    <div id="page-error" class="page">
+        <div class="result-wrapper">
+            <div class="result-icon result-icon--error">☹</div>
+            <h2>Something went wrong while generating your report.</h2>
+            <p id="errorMessage">Our AI models encountered an unexpected issue. Don't worry, your data is safe — we just need a moment to recalibrate.</p>
+            <div class="result-actions">
+                <button class="btn-primary btn-full" id="retryBtn" onclick="retrySubmission()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><polyline points="23 4 23 10 17 10" stroke="currentColor" stroke-width="2"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" stroke="currentColor" stroke-width="2"/></svg>
+                    Retry
+                </button>
+                <button class="btn-outline btn-full" onclick="showPage('page-landing')">Back to Dashboard</button>
+            </div>
+            <div class="form-trust" style="margin-top:20px">
+                <span>🔒 Secure Session</span>
+                <span>🟢 Support Online</span>
+            </div>
+        </div>
+
+        <div class="post-actions">
+            <div class="post-action-item">
+                <div class="post-action-icon">📖</div>
+                <div>
+                    <h4>Help Center</h4>
+                    <p>Explore our troubleshooting guides for common report errors.</p>
+                </div>
+            </div>
+            <div class="post-action-item">
+                <div class="post-action-icon">🕐</div>
+                <div>
+                    <h4>View History</h4>
+                    <p>Access your previously generated successful reports.</p>
+                </div>
+            </div>
+            <div class="post-action-item">
+                <div class="post-action-icon">💬</div>
+                <div>
+                    <h4>Live Support</h4>
+                    <p>Chat with a human expert about this technical issue.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer footer-mini">
+            <div class="footer-brand">LEADFLOW AI</div>
+            <p>© 2024 LeadFlow AI. Humanist Intelligence for Modern Business.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
